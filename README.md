@@ -50,7 +50,7 @@ npm start
 
 ## Deployment
 
-You can find the api hosted on [Heroku](https://petya-to-do-api.herokuapp.com/)
+You can find the api hosted on [Heroku](https://udacity-nlp-tool.herokuapp.com/)
 
 ## Udacity Project Requirements:
 
