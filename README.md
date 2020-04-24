@@ -8,7 +8,8 @@ The project is built with:
 2. SASS
 3. Webpack
 
-### Project Setup
+## Project Setup
+Follow the instructions below to setup the project locally.
 
 ### Environment Setup
 
