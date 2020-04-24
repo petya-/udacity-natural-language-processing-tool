@@ -1,0 +1,39 @@
+@import "./variables.scss";
+@import "./resets.scss";
+@import "./header.scss";
+@import "./form.scss";
+@import "./footer.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: $light-color-palette-1;
+  color: $green-color-palette-1;
+}
+
+main {
+  flex: 2;
+}
+
+section {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.headline {
+  h1 {
+    font-size: 2em;
+    font-family: $font-stack;
+    margin-bottom: 2em;
+    font-weight: 500;
+  }
+  p {
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: 300;
+  }
+}

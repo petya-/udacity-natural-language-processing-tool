@@ -1,0 +1,13 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vh;
+}
+
+.logo {
+  height: 50px;
+  width: 190px;
+  background: url("../images/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}

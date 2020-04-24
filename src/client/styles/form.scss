@@ -1,0 +1,80 @@
+.card {
+  border: 1px solid #545454;
+  border-radius: 6px;
+  padding: 40px;
+  height: 30vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  input {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 16px;
+    margin: 10px 0;
+    color: $yellow-color-palette-1;
+    border-color: $yellow-color-palette-1;
+  }
+  input[type="url"] {
+    background: transparent;
+    border: none;
+    border-bottom: solid;
+    color: $light-color-palette-1;
+    font-size: 1.2em;
+    font-weight: 150;
+    &:focus {
+      color: $light-color-palette-2;
+    }
+  }
+  input[type="submit"] {
+    width: 25%;
+    height: 20%;
+    border: dotted;
+    border-width: 1px;
+    background: transparent;
+    font-size: 1.2em;
+    font-weight: 200;
+    &:focus {
+      color: $light-color-palette-2;
+    }
+  }
+}
+
+.card-purple {
+  background: $purple-color-palette-2;
+  justify-content: flex-end;
+}
+
+.card-yellow {
+  display: none;
+  background: $yellow-color-palette-1;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.results-headline {
+  font-size: 2em;
+  font-family: $font-stack;
+  color: $green-color-palette-1;
+}
+
+.visible {
+  display: flex;
+}
+
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0.7;
+}
+
+.flex-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  strong {
+    font-weight: 500;
+  }
+  span {
+    font-weight: 200;
+  }
+}

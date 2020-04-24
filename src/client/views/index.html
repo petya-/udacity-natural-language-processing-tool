@@ -3,44 +3,54 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Test</title>
-  <link rel="stylesheet" href="/styles/resets.css">
-  <link rel="stylesheet" href="/styles/base.css">
-  <link rel="stylesheet" href="/styles/header.css">
-  <link rel="stylesheet" href="/styles/form.css">
-  <link rel="stylesheet" href="/styles/footer.css">
+  <title>Text Analysis with NPL</title>
 </head>
 
 <body>
 
   <header>
-    <div class="">
-      Logo
-    </div>
-    <div class="">
-      navigation
+    <div class="logo">
     </div>
   </header>
 
   <main>
+    <section class="headline">
+      <h1>Evaluate a news article with Natural Language Processing</h1>
+      <p>This web tool allows users to run Natural Language Processing (NLP) on articles or blogs found on other
+        websites. Simply enter a URL and we will give back pertinent information about the article, like whether the
+        content is subjective (opinion) or objective (fact-based) and whether it is positive, neutral, or negative in
+        tone.</p>
+    </section>
     <section>
-      <form class="" onsubmit="return handleSubmit(event)">
-        <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-        <input type="submit" name="" value="submit" onclick="return handleSubmit(event)"
-          onsubmit="return handleSubmit(event)">
+      <form autocomplete="off" class="card card-purple">
+        <input type="url" id="name" name="input" value="" placeholder="Enter URL to analyze text from">
+        <input type="submit" name="" value="Analyze content" onclick="return Client.handleSubmit(event)">
       </form>
       <section>
 
-        <section>
-          <strong>Form Results:</strong>
+        <section id="results-section" class="card card-yellow">
+          <h2 class="results-headline">Text Analysis:</h2>
           <div id="results"></div>
         </section>
   </main>
 
-  <footer>
-    <p>This is a footer</p>
-  </footer>
+  <footer><small>&copy; Petya Buchkova</small></footer>
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js').then(registration => {
+          console.log('SW registered: ', registration);
+        }).catch(registrationError => {
+          console.log('SW registration failed: ', registrationError);
+        });
+      });
+    } else {
+      console.info("serviceWorker not supported");
 
+    }
+  </script>
 </body>
 
 </html>
