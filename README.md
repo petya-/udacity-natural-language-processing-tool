@@ -8,7 +8,9 @@ The project is built with:
 2. SASS
 3. Webpack
 
-## Environment Setup
+### Project Setup
+
+### Environment Setup
 
 Create a `.env` file from `.env.example` and add populate it with your aylienAPI keys
 
@@ -16,12 +18,26 @@ Create a `.env` file from `.env.example` and add populate it with your aylienAPI
 copy .env.example .env
 ```
 
-## Install Dependencies
+### Install Dependencies
 
 Run the following command:
 
 ```js
 npm install
+```
+
+### Bundle modules
+
+Run the following command if you want to bundle the modules for production:
+
+```js
+npm run build-prod
+```
+
+or in development mode:
+
+```js
+npm run build-dev
 ```
 
 ### Running the server
@@ -32,17 +48,11 @@ Run the following command to run the server:
 npm start
 ```
 
-or run for development mode:
-
-```js
-npm run dev
-```
-
-### Deployment
+## Deployment
 
 You can find the api hosted on [Heroku](https://petya-to-do-api.herokuapp.com/)
 
-### Udacity Project Requirements:
+## Udacity Project Requirements:
 
 - [ ] Be set up with Webpack, Express, Node, and Sass, and Service Workers
 
