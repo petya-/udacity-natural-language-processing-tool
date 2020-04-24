@@ -21,7 +21,6 @@ async function handleSubmit(event) {
         }),
       })
     ).json();
-    console.log(res);
 
     updateUI(res);
   } catch (error) {
@@ -38,7 +37,6 @@ function updateUI(response) {
 
   const fragment = document.createDocumentFragment(); // DocumentFragment instead of a <div> for permormance
   for (let property in response) {
-    console.log(property);
     const newElement = document.createElement("div");
     newElement.innerHTML = `<p><strong>${property.toUpperCase()}:</strong></p> <p><span>${
       response[property]
