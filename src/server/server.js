@@ -14,7 +14,6 @@ app.use(
 );
 
 // designates what port the app will listen to for incoming requests
-const port = process.env.PORT || 3000;
 
 app.use("/", require("./routes"));
 
