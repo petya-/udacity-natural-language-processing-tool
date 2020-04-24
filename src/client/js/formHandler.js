@@ -11,7 +11,7 @@ async function handleSubmit(event) {
 
   try {
     const res = await (
-      await fetch("http://localhost:3000/analyze", {
+      await fetch("/analyze", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
