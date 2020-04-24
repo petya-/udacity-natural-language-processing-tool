@@ -9,6 +9,7 @@ The project is built with:
 3. Webpack
 
 ## Project Setup
+
 Follow the instructions below to setup the project locally.
 
 ### Environment Setup
@@ -49,6 +50,20 @@ Run the following command to run the server:
 npm start
 ```
 
+### Running the tests
+
+Run the following command to run the server:
+
+```js
+npm test
+```
+
+or run tests in watch mode:
+
+```js
+npm run test:watch
+```
+
 ## Deployment
 
 You can find the api hosted on [Heroku](https://udacity-nlp-tool.herokuapp.com/)
@@ -72,3 +87,5 @@ You can find the api hosted on [Heroku](https://udacity-nlp-tool.herokuapp.com/)
 - [x] Response from the API must be added to the view for a user to see
 
 - [x] Be able to show content offline
+
+- [x] JS files are tested with Jest
