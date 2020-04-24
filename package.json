@@ -1,10 +1,11 @@
 {
   "name": "example-project",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "jest",
-    "start": "node src/server/server.js",
+    "test:watch": "jest --watch",
+    "start": "node src/server/app.js",
     "build-prod": "webpack --config webpack.prod.js",
     "build-dev": "webpack-dev-server --config webpack.dev.js --open",
     "heroku-postbuild": "npm run build-prod"
@@ -38,6 +39,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.4",
+    "supertest": "^4.0.2",
     "terser-webpack-plugin": "^2.3.5",
     "webpack-dev-server": "^3.7.2",
     "workbox-webpack-plugin": "^5.1.2"

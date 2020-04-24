@@ -15,8 +15,7 @@ app.use(
 
 // designates what port the app will listen to for incoming requests
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.info(`Server is running on http://127.0.0.1:${port}`);
-});
 
 app.use("/", require("./routes"));
+
+module.exports = app;
