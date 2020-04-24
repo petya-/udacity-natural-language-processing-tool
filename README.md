@@ -54,7 +54,7 @@ You can find the api hosted on [Heroku](https://udacity-nlp-tool.herokuapp.com/)
 
 ## Udacity Project Requirements:
 
-- [ ] Be set up with Webpack, Express, Node, and Sass, and Service Workers
+- [X] Be set up with Webpack, Express, Node, and Sass, and Service Workers
 
 - [ ] Have separate dev and prod configurations for Webpack
 
