@@ -2,16 +2,18 @@ import { isValidURL } from "./urlChecker";
 
 async function handleSubmit(event) {
   event.preventDefault();
+  const baseURL = window.location.hostname === "localhost" ? 'http://localhost:3000': "https://udacity-nlp-tool.herokuapp.com";
+  console.log(process);
 
-  // check what text was put into the form field
   let urlInput = document.getElementById("name").value;
+
   if (!isValidURL(urlInput)) {
     return alert("Invalid URL!");
   }
 
   try {
     const res = await (
-      await fetch("/analyze", {
+      await fetch(`${baseURL}/analyze`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
